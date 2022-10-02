@@ -14,7 +14,6 @@ def pgdbins(chatid,prgm):
     conn.close()
 
 # pgdbins('456765434','B.Des')
-
 def pgdb(list):
     rows2=[]
     pk=0
@@ -23,7 +22,6 @@ def pgdb(list):
     cur = conn.cursor()
     for i in range(len(list)):
       pk=0
-
       if list[i]["ptype"]=="(R)":
         cur.execute("SELECT CID FROM BTECH_DEMO WHERE PRGM=%s AND SEM=%s",(list[i]["program"],list[i]["semester"]))
       
