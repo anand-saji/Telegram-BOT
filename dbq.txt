@@ -1,0 +1,16 @@
+create table btech_demo (cid varchar(15) primary key, sem char(2), prgm varchar(10));
+create table suppli_demo (cid varchar(15) primary key, sem char(2), prgm varchar(10));
+
+
+select * from btech_demo;
+select * from suppli_demo;
+
+insert into btech_demo values('222222223','S1','MCA');
+insert into suppli_demo values('222222223','S1','MCA');
+
+
+UPDATE BTECH_DEMO SET SEM='S6' WHERE CID='735059361';
+UPDATE SUPPLI_DEMO SET SEM='S6' WHERE CID='735059361';
+
+delete from btech_demo where sem='S6'
+delete from suppli_demo where sem='S6'
